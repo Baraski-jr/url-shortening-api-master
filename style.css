@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+:root {
+    --primary-clr-cyan: hsl(180, 66%, 49%);
+    --primary-clr-dkViolet: hsl(257, 27%, 26%);
+    --denger-clr: hsl(0, 87%, 67%);
+
+    --gray-bg: hsl(0, 0%, 75%);
+    --grayish-violet: hsl(257, 7%, 63%);
+    --very-dark-blue: hsl(255, 11%, 22%);
+    --Very-dk-Violet: hsl(260, 8%, 14%);
+
+    --font-size: 18px;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+    /* General Stylings */
+
+
+/* Centering the main container */
+.center-main-container {
+    width: min(80vw, 70rem);
+    margin: auto;
+}
+.title {
+    color: var(--primary-clr-dkViolet);
+    line-height: 2.7rem;
+
+}
+.light-text {
+    font-size: var(--font-size);
+    font-weight: 500;
+    color: var(--grayish-violet);
+    margin-block: 1rem;
+}
+.center {
+    margin: auto;
+    text-align: center;
+}
+.active-button {
+    border: none;
+    padding: 1rem  min(20vw, 5rem);
+    background-color: var(--primary-clr-cyan);
+    border-radius: 5rem;
+}
+.white-text {
+    color: #fff;
+}
+.big-space {
+    margin-block: 1.5rem;
+}
+.pointer-cursor {
+    cursor: pointer;
+}
+.fade-out:hover {
+    opacity: 0.9;
+}
+/* End of general styling */
+
+body {
+    overflow-x: hidden;
+}
+
+/* navigation */
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+    margin-bottom: 2rem;
+    /* border: 2px solid red; */
+    padding-inline: 0;
+
+}
+.logo {
+    width: 8rem;
+}
+.toggle-btn {
+    font-size: 2rem;
+}
+
+.mobile-nav {
+    /* display: none; */
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: var(--primary-clr-dkViolet);
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.mobile-nav .left-nav-side, .right-nav-side {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.mobile-nav li {
+    list-style: none;
+}
+.mobile-nav .right-nav-side {
+    border-top: 1px solid var(--grayish-violet);
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+.mobile-nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-block: 0.8rem;
+    font-weight: 700;
+}
+.mobile-nav .active {
+    background-color: aqua;
+    border-radius: 2rem;
+}
+/* End of navigation */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* IMAGE CONTENT OF THE MAIN CONTENT */
+.image-content {
+    position: relative;
+    /* left: 3rem; */
+    height: 26rem;
+
+
+}
+.image-content img {
+    width: 150%;
+    height: 100%;
+}
+
+.text-content, .adv {
+    /* border: 2px solid blue; */
+    text-align: center;
+    /* margin-block: 2rem; */
+
+}
+.text-content .title {
+    font-size: clamp(2.5rem, 5vw, 3rem);
+}
+/* End of th main section */
+
+/* Statistics sections */
+
+.statistics {
+    background-color: hsla(0, 0%, 75%, 0.24);
+}
+
+.card {
+    background: url(images/bg-shorten-mobile.svg) var(--primary-clr-dkViolet) no-repeat top right;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 0.8rem;
+}
+.card input {
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem;
+}
+.card button {
+    border-radius: 0.5rem;
+}
+
+.adv .title {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+}
+.box {
+    margin-block: 5rem;
+    padding: 5rem 2rem 2rem;
+    background-color: #fff;
+    position: relative;
+}
+.box .image {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -3rem;
+    padding: 2rem 2.3rem;
+    border-radius: 50%;
+    background-color: var(--primary-clr-dkViolet);
+}
+.containers {
+    position: relative;
+    padding-block: 2rem;
+}
+.line-through-boxes {
+    position: absolute;
+    width: 1rem;
+    height: 50rem;
+    top: 15rem;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%);
+    background-color: var(--primary-clr-cyan);
+}
+.Boost {
+    background: url(images/bg-boost-mobile.svg) var(--primary-clr-dkViolet)  top right/ cover;
+    padding: 3rem 1rem;
+}
+.Boost .title {
+    margin-bottom: 1rem;
+}
+footer {
+    background-color: var(--Very-dk-Violet);
+    padding-block: 2rem;
+}
+footer .logo img {
+    filter: invert(100%);
+    max-width: 100%;
+}
+
+foot-col .title {
+    font-size: clamp(1.5rem, vw, 2rem);
+}
+.social-media-icons {
+    margin-top: 2.5rem;
+}
+.social-media-icons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
